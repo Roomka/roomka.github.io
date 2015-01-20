@@ -1,0 +1,286 @@
+/* General style rules and classes */
+body, span,div, p, a, h1,h2,h3,h4{
+	font-family: 'Raleway', sans-serif;
+	color:white;
+
+}
+h1 {
+	text-align:center;
+}
+
+/* section #header Styles */
+#header {
+	height:667px;
+	position:relative;
+	background-color:#4183D7;
+}
+#header-title {
+	position:absolute;
+	top:150px;
+	width:100%;
+	text-align:center;		
+}
+
+#header-title p {
+	padding-top:24px;
+	font-size:1.4em;
+}
+
+/* section #competencies Styles */
+#competencies {
+	background-color: rgb(207, 0, 15);
+	min-height:667px;
+}
+#competencies ul {
+	padding-left:18px;
+}
+/* section #projects Styles */
+#projects {
+min-height:667px;
+background-color:#049372;
+}
+
+#projects a{
+color:white;
+text-decoration:none;
+
+}
+/* section #contact Styles */
+#contact {	
+	height:667px;
+	color:white;
+	background-color:#6C7A89;
+	position:relative;
+}
+#contact-title {
+	position:absolute;
+	width:100%;
+	text-align:center;
+	top:150px;
+
+}
+#contact-title h1 {
+	font-size:2.5em;
+}
+#contact-title span {
+	font-size:1.5em;
+	
+}
+ #copyright {
+position:absolute;
+	display:block;
+	width:100%;
+	text-align:center;
+	bottom:12px;
+
+}
+
+#trigger-overlay {
+cursor:pointer;
+top:8px;
+float:left;
+position:fixed;
+z-index:100;
+width:80px;
+height:60px;
+background:#1A3557;
+text-align:center;
+}
+
+#mainMenu {
+	opacity:0.97;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+		background-color:#1A3557;
+}
+::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+    
+}
+::-webkit-scrollbar-thumb {
+   background-color:#1A3557;
+}
+
+
+
+
+/* Overlay style */
+
+.centered {
+	display:block;
+	padding-top:12px;
+	text-align:center;
+}
+
+.secondary-nav {
+	position:absolute;
+	display:block;
+	width:100%;
+	text-align:center;
+	top:300px;
+}
+.secondary-nav .fa-facebook,.secondary-nav .fa-linkedin,.secondary-nav .fa-twitter  {
+	margin-right:5px;
+}
+.section-title {
+text-align:center;
+
+}
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(153,204,51,0.9);
+	background:#354457;
+	
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(../img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	font-size: 54px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+}
+
+.overlay ul li a {
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+	text-decoration:none;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #e3fcb1;
+	color:#BFBFBF;
+}
+
+/* Effects */
+.overlay-hugeinc {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav {
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.overlay-hugeinc nav ul {
+	opacity: 0.4;
+	-webkit-transform: translateY(-25%) rotateX(35deg);
+	transform: translateY(-25%) rotateX(35deg);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open nav ul {
+	opacity: 1;
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close nav ul {
+	-webkit-transform: translateY(25%) rotateX(-35deg);
+	transform: translateY(25%) rotateX(-35deg);
+}
+
+.container {
+float:left;
+background:#4183D7;
+}
+.fa-facebook, .fa-linkedin, .fa-twitter, .fa-github {
+color:white;
+
+}
+ 
+.fa-facebook:hover, .fa-linkedin:hover, .fa-twitter:hover, .fa-github:hover,
+.fa-facebook:active, .fa-linkedin:active, .fa-twitter:active, .fa-github:hover,
+.fa-facebook:focus,.fa-linkedin:focus,.fa-twitter:focus, .fa-github:focus {
+color:#BFBFBF;
+text-decoration:none;
+
+}
+
+
+
+.fa-bars {
+color:white;
+position:absolute;
+bottom:8px;
+left:20px;
+}
+
+
+
+
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}
+
+@media all and (min-width:768px) {
+	#contact-title span {
+		font-size:3em;
+	}
+}
+
+}
