@@ -13,6 +13,7 @@ h1 {
 	height:667px;
 	position:relative;
 	background-color:#4183D7;
+	background: url("../img/stardust.jpg");
 }
 #header-title {
 	position:absolute;
@@ -28,7 +29,7 @@ h1 {
 
 /* section #competencies Styles */
 #competencies {
-	background-color: rgb(207, 0, 15);
+	background-color: #2A3556;
 	min-height:667px;
 }
 #competencies ul {
@@ -37,7 +38,8 @@ h1 {
 /* section #projects Styles */
 #projects {
 min-height:667px;
-background-color:#049372;
+background-color:#254C4A;
+
 }
 
 #projects a{
@@ -49,7 +51,8 @@ text-decoration:none;
 #contact {	
 	height:667px;
 	color:white;
-	background-color:#6C7A89;
+	background-color:#2A4C56;
+
 	position:relative;
 }
 #contact-title {
